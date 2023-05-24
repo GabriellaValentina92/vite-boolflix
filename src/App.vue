@@ -1,4 +1,6 @@
 <script>
+import searchHeader from "./components/searchHeader.vue";
+import mainShows from "./components/mainShows.vue";
 import axios from "axios";
 import { store } from "./store";
 
@@ -9,10 +11,18 @@ export default {
     };
   },
 
-  components: {},
+  components: {
+    searchHeader,
+    mainShows,
+  },
 };
 </script>
 
-<template></template>
+<template>
+  <searchHeader />
+  <mainShows />
+</template>
 
-<style scoped></style>
+<style lang="scss">
+@use "./assets/style/general.scss";
+</style>
