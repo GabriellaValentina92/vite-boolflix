@@ -1,24 +1,23 @@
 <script>
 export default {
   props: {
-    movieCards: Object,
     seriesCard: Object,
   },
 };
 </script>
 
 <template>
-  <div class="movies">
-    <h3>{{ movieCards.title }}</h3>
-    <h4>{{ movieCards.original_title }}</h4>
-    <h5>{{ movieCards.original_language }}</h5>
-    <div>{{ movieCards.vote_average }}</div>
+  <div class="series">
+    <h3>{{ seriesCard.name }}</h3>
+    <h4>{{ seriesCard.original_name }}</h4>
+    <h5>{{ seriesCard.original_language }}</h5>
+    <div>{{ seriesCard.vote_average }}</div>
     <img src="" alt="" />
   </div>
 </template>
 
 <style lang="scss" scoped>
-.movies {
+.series {
   background-color: black;
   color: white;
   border: 4px solid white;

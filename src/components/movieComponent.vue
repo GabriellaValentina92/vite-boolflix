@@ -16,6 +16,7 @@ export default {
 </script>
 
 <template>
+  <h1>Elenco dei film disponibili:</h1>
   <div class="container">
     <movieCard
       v-for="card in store.entertainmentList"
