@@ -24,7 +24,7 @@ export default {
             query: searchMovie,
             include_adult: "false",
             language: "it-IT",
-            api_key: "Bearer 2daf3b78dc2479cf32ccffe1df62ec94",
+            api_key: "2daf3b78dc2479cf32ccffe1df62ec94",
           },
         })
         .then(
