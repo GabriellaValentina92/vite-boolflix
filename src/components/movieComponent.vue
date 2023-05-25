@@ -1,4 +1,5 @@
 <script>
+import movieCard from "./movieCard.vue";
 import { store } from "../store";
 
 export default {
@@ -7,9 +8,32 @@ export default {
       store,
     };
   },
+
+  components: {
+    movieCard,
+  },
 };
 </script>
 
-<template></template>
+<template>
+  <div class="container">
+    <movieCard
+      v-for="card in store.entertainmentList"
+      :key="card.id"
+      :movieCards="card"
+      class="card"
+    />
+  </div>
+</template>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.container {
+  display: flex;
+  flex-wrap: wrap;
+
+  .card {
+    background-color: black;
+    flex: 0 0 30%;
+  }
+}
+</style>

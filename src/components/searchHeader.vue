@@ -5,19 +5,20 @@ export default {
   data() {
     return {
       store,
+      searchMovie: "",
     };
   },
 };
 </script>
 
 <template>
-  <div class="container">
+  <form class="container" @submit="$emit('performSearch', searchMovie)">
     <h1>Boolflix</h1>
     <div class="search">
-      <input type="text" />
+      <input type="text" v-model="searchMovie" />
       <button>Search</button>
     </div>
-  </div>
+  </form>
 </template>
 
 <style lang="scss" scoped>

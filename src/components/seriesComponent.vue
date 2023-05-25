@@ -1,15 +1,6 @@
 <script>
-import { store } from "../store";
-
-export default {
-  data() {
-    return {
-      store,
-    };
-  },
-};
+export default {};
 </script>
-
 <template></template>
 
-<style lang="scss" scoped></style>
+<style></style>
