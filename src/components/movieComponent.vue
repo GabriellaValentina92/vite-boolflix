@@ -33,7 +33,7 @@ export default {
   flex-wrap: wrap;
 
   .card {
-    flex: 0 0 30%;
+    flex: 0 0 20%;
   }
 }
 </style>
