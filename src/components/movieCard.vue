@@ -2,7 +2,13 @@
 export default {
   props: {
     movieCards: Object,
-    seriesCard: Object,
+  },
+
+  methods: {
+    convertNumber() {
+      const vote = this.movieCards.vote_average / 2;
+      return Math.round(vote);
+    },
   },
 };
 </script>
@@ -12,7 +18,7 @@ export default {
     <h3>{{ movieCards.title }}</h3>
     <h4>{{ movieCards.original_title }}</h4>
     <h5>{{ movieCards.original_language }}</h5>
-    <div>{{ movieCards.vote_average }}</div>
+    <div>{{ convertNumber() }}</div>
     <img src="" alt="" />
   </div>
 </template>
