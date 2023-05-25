@@ -28,8 +28,7 @@ export default {
           },
         })
         .then(
-          (response) =>
-            (this.store.entertainmentList.data = response.data.results)
+          (response) => (this.store.entertainmentList = response.data.results)
         );
     },
   },

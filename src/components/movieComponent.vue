@@ -32,7 +32,6 @@ export default {
   flex-wrap: wrap;
 
   .card {
-    background-color: black;
     flex: 0 0 30%;
   }
 }

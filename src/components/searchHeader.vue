@@ -12,7 +12,7 @@ export default {
 </script>
 
 <template>
-  <form class="container" @submit="$emit('performSearch', searchMovie)">
+  <form class="container" @submit.prevent="$emit('performSearch', searchMovie)">
     <h1>Boolflix</h1>
     <div class="search">
       <input type="text" v-model="searchMovie" />
