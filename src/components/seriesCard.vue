@@ -1,5 +1,10 @@
 <script>
+import LangFlag from "vue-lang-code-flags/LangFlag.vue";
 export default {
+  components: {
+    LangFlag,
+  },
+
   props: {
     seriesCard: Object,
   },
@@ -17,7 +22,8 @@ export default {
   <div class="series">
     <h3>{{ seriesCard.name }}</h3>
     <h4>{{ seriesCard.original_name }}</h4>
-    <h5>{{ seriesCard.original_language }}</h5>
+    <h5><LangFlag :iso="seriesCard.original_language" :squared="false" /></h5>
+    <span class="lang-text">{{ seriesCard.original_language }}</span>
     <div>voto: {{ convertNumber() }}</div>
     <img
       :src="'https://image.tmdb.org/t/p/w154' + seriesCard.poster_path"
@@ -33,5 +39,15 @@ export default {
   color: white;
   border: 4px solid white;
   margin-top: 4px;
+}
+.lang-text {
+  display: none;
+}
+.flag-icon-indefined {
+  display: none;
+}
+
+.flag-icon-indefined + .lang-text {
+  display: inline;
 }
 </style>
