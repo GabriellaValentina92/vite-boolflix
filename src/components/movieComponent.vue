@@ -31,9 +31,12 @@ export default {
 .container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
 
   .card {
     flex: 0 0 20%;
+    margin-bottom: 12rem;
   }
 }
 </style>

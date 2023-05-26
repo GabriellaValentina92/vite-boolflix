@@ -28,6 +28,9 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+h1 {
+  margin-top: 3rem;
+}
 .container {
   display: flex;
   flex-wrap: wrap;
