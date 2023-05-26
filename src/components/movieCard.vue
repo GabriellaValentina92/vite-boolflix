@@ -50,6 +50,8 @@ export default {
   </vue-flip>
 </template>
 
+<!-- <font-awesome-icon :icon="['far', 'star']" /> -->
+
 <style lang="scss" scoped>
 .frontImg {
   .frontImg img {
