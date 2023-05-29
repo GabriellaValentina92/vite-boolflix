@@ -36,7 +36,7 @@ export default {
 
   .card {
     flex: 0 0 20%;
-    margin-bottom: 12rem;
+    margin: 2rem 4rem 12rem 0;
   }
 }
 </style>

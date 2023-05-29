@@ -44,13 +44,25 @@ export default {
           <LangFlag :iso="movieCards.original_language" :squared="false" />
         </h5>
         <span class="text-lang">{{ movieCards.original_language }}</span>
-        <div>voto: {{ convertNumber() }}</div>
+        <div>
+          voto: {{ convertNumber() }}
+          <!-- <font-awesome-icon
+            v-for="i in convertNumber()"
+            :key="i"
+            :icon="['fas', 'star']"
+            class="star"
+          />
+          <font-awesome-icon
+            v-for="i in convertNumber() - 5"
+            :key="i"
+            :icon="['far', 'star']"
+            class="star"
+          /> -->
+        </div>
       </div>
     </template>
   </vue-flip>
 </template>
-
-<!-- <font-awesome-icon :icon="['far', 'star']" /> -->
 
 <style lang="scss" scoped>
 .frontImg {
@@ -86,5 +98,9 @@ export default {
 
 .flag-icon-indefined + .lang-text {
   display: inline;
+}
+
+.star {
+  color: white;
 }
 </style>
